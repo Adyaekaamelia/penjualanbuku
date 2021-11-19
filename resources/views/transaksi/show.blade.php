@@ -73,8 +73,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <button type="reset" class="btn btn-outline-warning">Reset</button>
-                                <button type="submit" class="btn btn-outline-primary">Simpan</button>
+                                <a href="{{ route('transaksi.index') }}" class="btn btn-block btn-primary">Kembali</a>
                             </div>
                         </form>
                     </div>

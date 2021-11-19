@@ -12,6 +12,11 @@ class BukuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $buku = Buku::with('supplier')->get();
@@ -104,7 +109,7 @@ class BukuController extends Controller
             'jenis' => 'required',
             'stok' => 'required',
             'harga' => 'required',
-            // 'cover' => 'required|image|max:2048',
+            'cover' => 'required|image|max:2048',
         ]);
 
         $buku = Buku::findOrFail($id);

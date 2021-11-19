@@ -43,7 +43,7 @@
                             </div>
                             <div class="form-group">
 
-                                <button type="submit" class="btn btn-outline-primary">kembali</button>
+                                <a href="{{ route('supplier.index') }}" class="btn btn-block btn-primary">Kembali</a>
                             </div>
                         </form>
                     </div>

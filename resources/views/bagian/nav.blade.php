@@ -1,5 +1,5 @@
  <div class="navbar-header">
-     <a class="navbar-brand" href="">Toko Buku</a>
+     <a class="navbar-brand" href="{{ route('home') }}">Toko Buku</a>
  </div>
 
  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
